@@ -6,23 +6,27 @@ userGreeting = gets.chomp.to_s
 
 puts case userGreeting
 when "Hola"
-	"Hola, como estas"
+	greetings[1] + ", como estas"
 when "Konnichi wa"
 	"Hajimemashite douzo yoroshiku"
 when "Bonjour"
-	"Bonjour, comment ca va?"
-when "Bonjourno"
-	"Bonjourno, come va"
+	greetings[3] + ", comment ca va?"
+when "Ciao"
+	greetings[4] + ", come va"
 else
-	"Hello, how are you?"
+	greetings[0] + ", how are you?"
 end
 puts
 
 greeted = false
 greetings.each do |greeting|
-end
 	next unless ( greeting == userGreeting )
 		puts "#{greeting}"
+		greeted = true
+		break
 end
+
+puts greetings[0] if (!greeted)
+puts
 
 puts "Good-bye World!"
