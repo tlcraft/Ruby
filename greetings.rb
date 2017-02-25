@@ -16,11 +16,13 @@ when "Bonjourno"
 else
 	"Hello, how are you?"
 end
+puts
 
+greeted = false
 greetings.each do |greeting|
-if ( greeting == userGreeting )
-	puts "#{greeting}"
 end
+	next unless ( greeting == userGreeting )
+		puts "#{greeting}"
 end
 
 puts "Good-bye World!"
