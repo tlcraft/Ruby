@@ -27,3 +27,33 @@ puts full_name.size
 puts "Vowels : " + full_name.count("aeiou").to_s
 puts "Consonants : " + full_name.count("^aeiou").to_s
 
+puts full_name.start_with?("Banas")
+
+puts "Index : " + full_name.index("Banas").to_s
+
+
+
+puts "a == a : " + ("a" == "a").to_s
+puts "\"a\".equal?(\"a\") : " + ("a".equal?"a").to_s
+puts first_name.equal?first_name 
+
+
+puts full_name.upcase
+puts full_name.downcase
+puts full_name.swapcase
+
+full_name = "      " + full_name
+puts full_name
+
+full_name = full_name.lstrip
+puts full_name
+
+full_name = full_name.rstrip
+puts full_name
+
+full_name = full_name.strip
+puts full_name
+
+puts full_name.rjust(20, '.')
+puts full_name.ljust(20, '.')
+puts full_name.center(20, '.')
