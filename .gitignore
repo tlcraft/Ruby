@@ -72,6 +72,7 @@ pickle-email-*.html
 config/initializers/secret_token.rb
 
 # Only include if you have production secrets in this file, which is no longer a Rails default
+secrets.yml
 
 
 # these should all be checked in to normalize the environment:
